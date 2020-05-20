@@ -3,7 +3,7 @@
 [x,Fs] = audioread('FarEndSignal.wav');			%Signal 'x[n]' is sampled at Fs = 8000Hz
 Fs= 8000;
 xf = x;
-[y,N] = room(xf,201747002)	;					%Obtain y[n] signal. N parameter based on student registration number
+[y,N] = room(xf,N)	;					%Obtain y[n] signal. N parameter based on student registration number
 y(numel(xf)) = 0;								%Extend y vector with zeros to match lengths.
 
 %% Stage 2 -----------------------------------------------------------------------------------------------
